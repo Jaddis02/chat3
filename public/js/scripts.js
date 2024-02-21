@@ -18,12 +18,16 @@ function mostrarMensajes() {
         url: baseUrl + '/obtenerMensajes',
         method: 'get',
         success: function(respuesta) {
-            alert('prueba');
-            // console.log(respuesta);
             var mensajes = JSON.parse(respuesta);
-            // console.log(mensajes);
-            console.log("El mensaje 0 es " + mensajes[0]['texto']);
+            $('#contenedorMensajes').html('');
+
+            for(var i=0; i<mensajes.length; i++) {
+                var txt = mensajes[i]['usuario'] + ": " + mensajes[i]['texto'] + '<br>';
+                $('#contenedorMensajes').append(txt);
+            }
 
         }
     });
 }
+
+
