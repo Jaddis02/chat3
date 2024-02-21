@@ -11,5 +11,6 @@
 
     <input type="text" id="textoUsuario" name="textoUsuario" />
     <button onclick="enviarMensaje()">Enviar</button>
+    <button onclick="mostrarMensajes()">Actualizar mensajes</button>
 
 </div>

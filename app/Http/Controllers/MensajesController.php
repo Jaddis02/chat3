@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Mensaje;
 use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\DB;
 
 class MensajesController extends Controller
 {
@@ -39,7 +40,9 @@ class MensajesController extends Controller
         $mensaje->save();
 
         echo 'Mensaje enviado y guardado';
+    }
 
-
+    public function obtenerMensajes() {
+        $mensajes = DB::select('');
     }
 }

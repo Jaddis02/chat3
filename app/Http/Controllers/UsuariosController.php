@@ -12,7 +12,8 @@ class UsuariosController extends Controller
 
         $session = Session();
 
-        if($session->get('nombre') != null) {
+        // if($session->get('nombre') != null) {
+        if($session->has('nombre')) {
          
             return  view('templates/header').
                     view('listadoMensajes').
