@@ -8,7 +8,6 @@ function enviarMensaje() {
         data: { mensajeEnvio: texto },
         success: function(respuesta) {
             alert(respuesta);
-
             mostrarMensajes();
         }
     });
@@ -16,10 +15,15 @@ function enviarMensaje() {
 
 function mostrarMensajes() {
     $.ajax({
-        url: baseUrl + 'obtenerMensajes',
+        url: baseUrl + '/obtenerMensajes',
         method: 'get',
         success: function(respuesta) {
-            console.log(respuesta);
+            alert('prueba');
+            // console.log(respuesta);
+            var mensajes = JSON.parse(respuesta);
+            // console.log(mensajes);
+            console.log("El mensaje 0 es " + mensajes[0]['texto']);
+
         }
     });
 }

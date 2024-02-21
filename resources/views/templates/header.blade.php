@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="{{ asset('js/jquery.min.js') }}"></script>
-    <script src="{{ asset('js/scripts.js') }}"></script>
+    <script src="{{ asset('js/scripts.js') }}?v={{ rand(0,10000) }}"></script>
 
     <script>
         var baseUrl = '{{ url("") }}';
