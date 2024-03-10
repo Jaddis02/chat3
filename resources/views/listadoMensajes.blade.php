@@ -13,4 +13,6 @@
     <button onclick="enviarMensaje()">Enviar</button>
     <button onclick="mostrarMensajes()">Actualizar mensajes</button>
 
+    <a href="{{ url('') }}">Cerrar Sesión</a>
 </div>
+
