@@ -12,10 +12,10 @@ class MensajesController extends Controller
     // Muestra la vista del chat
     public function mostrarMensajes() {
         
-        return  view('templates/header').
-                view('listadoMensajes').
+        return  view('templates/header').               
+                view('listadoMensajes'). 
+                view('templates/lateral').              
                 view('templates/footer');
-
     }
 
     // El usuario envía un mensaje por AJAX:
@@ -47,4 +47,5 @@ class MensajesController extends Controller
         $mensajesJson = json_encode($mensajes);
         echo $mensajesJson;
     }
+
 }

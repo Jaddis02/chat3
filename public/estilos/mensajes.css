@@ -1,0 +1,32 @@
+.contenedorMensajes {
+    height: 500px;
+    background: #f7f7f7;
+    padding: 10px 30px 20px 30px;
+    box-shadow: inset 0 32px 32px -32px rgb(0 0 0 / 5%),
+        inset 0 -32px 32px -32px rgb(0 0 0 / 5%)
+}
+
+a{
+        margin-top: 13px;
+        height: 45px;
+        border: none;
+        font-size: 17px;
+        font-weight: 500;
+        background: #333;
+        color: #fff;
+        border-radius: 5px;
+        cursor: pointer;
+}
+
+a:link, a:visited, a:active{
+        text-decoration: none;
+}
+
+input{
+        height: 40px;
+        width: 100%;
+        font-size: 16px;
+        padding: 0 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+}

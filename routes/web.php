@@ -19,7 +19,7 @@ use App\Http\Controllers\MensajesController;
 Route::get('/', [UsuariosController::class, 'acceso']);
 Route::post('/login', [UsuariosController::class, 'registrarSesion']);
 Route::get('/login', [UsuariosController::class, 'registrarSesion']);
-Route::get('/login', [UsuariosController::class, 'cerrar']);
+Route::get('/cerrar', [UsuariosController::class, 'cerrar']);
 
 
 // MENSAJES:

@@ -18,13 +18,11 @@ class UsuariosController extends Controller
         if($session->has('nombre')) {
          
             return  view('templates/header').
-                    view('listadoMensajes').
-                    view('templates/footer');
-        } 
+                    view('listadoMensajes');
+        }
 
         return  view('templates/header').
-                view('acceso').
-                view('templates/footer');
+                view('acceso');
         
     }
 
@@ -50,6 +48,9 @@ class UsuariosController extends Controller
         $request->session()->regenerateToken();
         return redirect('/');
     }
+
+    
+
 }
 
 
